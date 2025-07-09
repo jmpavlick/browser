@@ -34,7 +34,7 @@ import VirtualDom as V
 
 minimumPanelSize : Int
 minimumPanelSize =
-  150
+  600
 
 
 initialWindowWidth : Int
@@ -44,7 +44,7 @@ initialWindowWidth =
 
 initialWindowHeight : Int
 initialWindowHeight =
-  420
+  1600
 
 
 
@@ -156,7 +156,7 @@ wrapInit metadata popout init flags =
     , metadata = Metadata.decode metadata
     , overlay = Overlay.none
     , popout = popout
-    , layout = Horizontal Static 0.3 0.5
+    , layout = Vertical Static 0.3 0.5
     }
   , Cmd.map UserMsg userCommands
   )
@@ -632,7 +632,7 @@ viewHistory maybeIndex history layout =
     , style "display" "flex"
     , style "flex-direction" "column"
     , style "color" "#DDDDDD"
-    , style "background-color" "rgb(61, 61, 61)"
+    , style "background-color" "rgb(27, 123, 110)"
     , style "pointer-events" block
     , style "user-select" block
     ]
